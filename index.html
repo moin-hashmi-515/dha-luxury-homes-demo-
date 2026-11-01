@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DHA Luxury Homes — DEMO Lead-Gen Redesign</title>
+<meta name="description" content="DEMO lead-gen redesign for DHA Luxury Homes, Lahore. Premium listings search, valuation/consultation enquiry, and contact — demo only, not the firm's live site.">
+<style>
+:root{--green:#14532d;--navy:#1f2937;--gold:#c9a227;--ink:#1c2b33;--muted:#5a6b72;--bg:#f4f6f5;--card:#fff}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+.demo{background:#b3261e;color:#fff;text-align:center;padding:10px 14px;font-weight:700;font-size:14px}
+.demo small{display:block;font-weight:400;opacity:.9}
+header{background:var(--navy);color:#fff}
+.wrap{max-width:1050px;margin:0 auto;padding:0 18px}
+.top{display:flex;gap:16px;align-items:center;padding:18px 0;flex-wrap:wrap}
+.logo{font-weight:800;font-size:24px;color:var(--gold)}
+h1{margin:0;font-size:24px}h1 small{display:block;font-size:15px;color:#dbe3e3;font-weight:500}
+nav{display:flex;gap:18px;padding:0 0 14px;flex-wrap:wrap}nav a{color:#fff;text-decoration:none;font-weight:600}
+.hero{padding:34px 0 24px}.hero h2{font-size:32px;margin:0 0 10px;line-height:1.25}.hero p{font-size:18px;color:#334}
+.btn{display:inline-block;background:var(--gold);color:#111;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:700;margin:6px 8px 6px 0}
+.btn.outline{background:#fff;color:var(--green);border:2px solid var(--green)}
+section{padding:26px 0}h2{font-size:26px;margin:0 0 14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.card{background:var(--card);border-radius:14px;padding:18px;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.card h3{margin:0 0 6px;font-size:18px}.card p{margin:0;color:var(--muted)}
+.sample{display:inline-block;background:#fff3cd;color:#664d03;font-size:12px;font-weight:700;padding:3px 8px;border-radius:20px;margin-bottom:8px}
+form{background:#fff;border-radius:14px;padding:20px;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+label{display:block;font-weight:600;margin:12px 0 4px}
+input,select,textarea{width:100%;padding:11px;border:1px solid #cbd5d7;border-radius:10px;font:inherit}
+button{cursor:pointer;background:var(--green);color:#fff;border:0;padding:13px 22px;border-radius:10px;font-weight:700;font-size:16px}
+.ok{background:#e6f4ea;border:1px solid #a3d9a5;padding:12px;border-radius:10px;margin-top:14px;display:none}
+.note{font-size:14px;color:var(--muted)}footer{background:var(--navy);color:#dbe3e3;padding:26px 0;margin-top:20px}footer a{color:#fff}
+@media(max-width:600px){.hero h2{font-size:27px}}
+</style>
+</head>
+<body>
+<div class="demo">DEMO REDESIGN — NOT THE FIRM'S LIVE SITE <small>This is a sample lead-gen redesign for DHA Luxury Homes to review. Enquiries entered here are demo-only and are not sent to the firm.</small></div>
+<header><div class="wrap">
+<div class="top"><div class="logo">DHA Luxury Homes</div><div><h1>Premium Real Estate in Lahore <small>Lead-gen redesign — listings, valuation &amp; consultation enquiries</small></h1></div></div>
+<nav><a href="#listings">Listings</a><a href="#consult">Free Consultation</a><a href="#contact">Contact</a><a href="admin.html">Firm Login (Demo CMS)</a></nav>
+</div></header>
+<main class="wrap">
+<section class="hero">
+<h2>Luxury listings that turn browsers into consultation enquiries.</h2>
+<p>The firm's live site already has search, filters and listings — but only 9 properties were found at check time, and the gap is qualified luxury-buyer traffic and enquiry capture. This demo sharpens that: a clear search, sample luxury cards, and a consultation form that asks how the buyer wants to be contacted.</p>
+<a class="btn" href="#consult">Get Free Consultation</a>
+<a class="btn outline" href="https://wa.me/923024692626">WhatsApp 0302 4692626</a>
+</section>
+
+<section id="listings"><h2>Listings</h2>
+<form onsubmit="return false;">
+<label for="ptype">Property Type</label><select id="ptype"><option>All</option><option>House</option><option>Apartment</option><option>Plot</option><option>Commercial</option></select>
+<label for="loc">Location</label><select id="loc"><option>All</option><option>DHA</option><option>Bahria Town</option><option>Cantt Area</option><option>Askari</option><option>Gulberg</option><option>Model Town</option><option>Garden Town</option><option>Johar Town</option><option>Lake City</option><option>LDA City</option></select>
+<label for="budget">Budget Range</label><select id="budget"><option>All</option><option>Under 1 Crore</option><option>1–3 Crore</option><option>3–5 Crore</option><option>5+ Crore</option></select>
+<p><button type="button" onclick="filterCards()">Search (Demo)</button></p>
+</form>
+<div class="grid" id="cards">
+<div class="card" data-text="house dha"><span class="sample">SAMPLE LISTING</span><h3>Sample Luxury House — DHA</h3><p>Type: House &middot; Location: DHA</p><p><strong>Price on enquiry</strong> — no real price is claimed in this demo.</p></div>
+<div class="card" data-text="plot dha"><span class="sample">SAMPLE LISTING</span><h3>Sample Plot — DHA</h3><p>Type: Plot &middot; Location: DHA</p><p><strong>Price on enquiry</strong> — no real price is claimed in this demo.</p></div>
+<div class="card" data-text="apartment gulberg"><span class="sample">SAMPLE LISTING</span><h3>Sample Apartment — Gulberg</h3><p>Type: Apartment &middot; Location: Gulberg</p><p><strong>Price on enquiry</strong> — no real price is claimed in this demo.</p></div>
+</div>
+<p class="note">All cards above are labelled SAMPLE. No real listings, prices, or availability are claimed — a live redesign would be filled from the firm's real inventory (9 properties were found on the live site at check time).</p>
+</section>
+
+<section id="consult"><h2>Get Free Consultation</h2>
+<form id="enqForm">
+<label for="ename">Your Name</label><input id="ename" required placeholder="Full name">
+<label for="ephone">Phone Number</label><input id="ephone" required placeholder="03xx xxxxxxx" inputmode="tel">
+<label for="einterest">Interest</label><select id="einterest"><option>Buying a luxury home</option><option>Selling a property</option><option>Valuation / consultation</option><option>Investment advice</option><option>Renting</option></select>
+<label for="epref">Preferred Contact Method</label><select id="epref"><option>WhatsApp</option><option>Phone</option><option>Email</option></select>
+<label for="emsg">Your Message</label><textarea id="emsg" rows="3" placeholder="e.g. I am looking for a luxury house in DHA Phase 8"></textarea>
+<p><button type="submit">Send Message (Demo)</button></p>
+<div class="ok" id="okMsg">Thank you — your demo enquiry has been saved in this browser only. In a live site, the firm would reply by your preferred method. This demo does not send anything to the firm.</div>
+<p class="note">Demo notice: this form stores the enquiry in your browser's local storage only. There is no server, no real login, and no payment or notification system in this demo. A production site would need a backend / WordPress build. No fee or outcome is promised here.</p>
+</form></section>
+
+<section id="contact"><h2>Contact</h2>
+<div class="grid">
+<div class="card"><h3>Phone &amp; WhatsApp</h3><p><a href="tel:+923024692626">0302 4692626</a><br><a href="https://wa.me/923024692626">WhatsApp: wa.me/923024692626</a></p><p class="note">Verified on the site header/link element.</p></div>
+<div class="card"><h3>Hours</h3><p>Mon–Sat 9:00 AM–6:00 PM; Sunday Closed</p><p class="note">WhatsApp inquiries may be answered outside business hours, as stated on the site.</p></div>
+<div class="card"><h3>Location</h3><p>DHA Lahore, Pakistan — general location only. No exact office street address is claimed here, because none was publicly verified.</p></div>
+<div class="card"><h3>Follow</h3><p><a href="https://www.instagram.com/dhaluxuryhomes_official/">Instagram — @dhaluxuryhomes_official, 2,608 followers</a><br><a href="https://www.facebook.com/DHALuxuryHomes/">Facebook — DHA Luxury Homes (follower count not verified, login-gated)</a></p></div>
+<div class="card"><h3>Email</h3><p>No business email is shown here — none was found on the firm's home, About, Contact, Properties, or Terms pages.</p></div>
+</div>
+</section>
+</main>
+<footer><div class="wrap">
+<p><strong>DEMO — DHA Luxury Homes lead-gen sample.</strong> Built for review only. Not affiliated with, and not published by, the firm. Real client data must not be entered in this demo.</p>
+<p><a href="admin.html">Firm Login (Demo CMS)</a> — front-end demo only; login is UI-only, no real authentication.</p>
+</div></footer>
+<script>
+const KEY='dhaluxury_demo_v1';
+function getData(){try{return JSON.parse(localStorage.getItem(KEY))||{}}catch(e){return{}}}
+function filterCards(){
+  const t=document.getElementById('ptype').value.toLowerCase();
+  const l=document.getElementById('loc').value.toLowerCase();
+  document.querySelectorAll('#cards .card').forEach(c=>{
+    const txt=c.getAttribute('data-text');
+    const okT = t==='all' || txt.includes(t);
+    const okL = l==='all' || txt.includes(l);
+    c.style.display = (okT && okL) ? '' : 'none';
+  });
+}
+document.getElementById('enqForm').addEventListener('submit',e=>{e.preventDefault();
+  const d=getData(); d.enquiries=d.enquiries||[];
+  d.enquiries.push({name:document.getElementById('ename').value,phone:document.getElementById('ephone').value,interest:document.getElementById('einterest').value,preferred:document.getElementById('epref').value,message:document.getElementById('emsg').value,status:'Pending',at:new Date().toISOString()});
+  localStorage.setItem(KEY,JSON.stringify(d)); document.getElementById('okMsg').style.display='block'; e.target.reset();});
+</script>
+</body>
+</html>
